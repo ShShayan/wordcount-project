@@ -1,0 +1,17 @@
+<a href="{% url 'home' %}"> Home Page </a>       <a href="{% url 'about' %}"> About me </a>
+<br/>
+<h1>There are {{ count }} words in your text!</h1>
+<br/>
+<a href="{% url 'home' %}"> Start again? </a>
+<h2>Your full text is:</h2>
+{{ fulltext }}
+
+<br/>
+<h2>Words in your text:</h2>
+
+{% for words,counttotal in worddic %}
+
+{{words}} : {{ counttotal }}
+<br/>
+
+{% endfor %}

@@ -1,0 +1,11 @@
+<a href="{% url 'home' %}"> Home Page </a>       <a href="{% url 'about' %}"> About me </a>
+<br/>
+<h1> This is Shayan's word counter!</h1>
+
+<form action='{% url "count" %}'>
+    <textarea cols='50' rows='10' name='fulltext'>
+    </textarea>
+    <br/>
+    <br/>
+    <input type='submit' value='Count!'/>
+</form>
